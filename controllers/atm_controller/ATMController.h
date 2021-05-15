@@ -3,18 +3,28 @@
 
 #include <iostream>
 #include "../../models/user/User.h"
+#include "../../file_handler/FileHandler.h"
+#include "../../controllers/user_controller/UserController.h"
 
 using namespace std;
 
 class ATMController {
 private:
-    User user;
-    File
+    FileHandler fileHandler;
+    UserController userController;
+
+    bool login();
+
+    void loggedIn();
+
+    void deposit();
+
+    void printLoggedInMenu();
+
     void printMenu();
 
 public:
     void run();
-    void login();
 };
 
 

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o"
   "CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o"
   "CMakeFiles/ATM.dir/main.cpp.o"
+  "CMakeFiles/ATM.dir/models/transaction/Transaction.cpp.o"
+  "CMakeFiles/ATM.dir/models/transaction/time.cpp.o"
   "CMakeFiles/ATM.dir/models/user/User.cpp.o"
 )
 

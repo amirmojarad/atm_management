@@ -250,6 +250,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+models/transaction/Transaction.o: models/transaction/Transaction.cpp.o
+
+.PHONY : models/transaction/Transaction.o
+
+# target to build an object file
+models/transaction/Transaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/models/transaction/Transaction.cpp.o
+.PHONY : models/transaction/Transaction.cpp.o
+
+models/transaction/Transaction.i: models/transaction/Transaction.cpp.i
+
+.PHONY : models/transaction/Transaction.i
+
+# target to preprocess a source file
+models/transaction/Transaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/models/transaction/Transaction.cpp.i
+.PHONY : models/transaction/Transaction.cpp.i
+
+models/transaction/Transaction.s: models/transaction/Transaction.cpp.s
+
+.PHONY : models/transaction/Transaction.s
+
+# target to generate assembly for a file
+models/transaction/Transaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/models/transaction/Transaction.cpp.s
+.PHONY : models/transaction/Transaction.cpp.s
+
+models/transaction/time.o: models/transaction/time.cpp.o
+
+.PHONY : models/transaction/time.o
+
+# target to build an object file
+models/transaction/time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/models/transaction/time.cpp.o
+.PHONY : models/transaction/time.cpp.o
+
+models/transaction/time.i: models/transaction/time.cpp.i
+
+.PHONY : models/transaction/time.i
+
+# target to preprocess a source file
+models/transaction/time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/models/transaction/time.cpp.i
+.PHONY : models/transaction/time.cpp.i
+
+models/transaction/time.s: models/transaction/time.cpp.s
+
+.PHONY : models/transaction/time.s
+
+# target to generate assembly for a file
+models/transaction/time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/models/transaction/time.cpp.s
+.PHONY : models/transaction/time.cpp.s
+
 models/user/User.o: models/user/User.cpp.o
 
 .PHONY : models/user/User.o
@@ -298,6 +352,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... models/transaction/Transaction.o"
+	@echo "... models/transaction/Transaction.i"
+	@echo "... models/transaction/Transaction.s"
+	@echo "... models/transaction/time.o"
+	@echo "... models/transaction/time.i"
+	@echo "... models/transaction/time.s"
 	@echo "... models/user/User.o"
 	@echo "... models/user/User.i"
 	@echo "... models/user/User.s"

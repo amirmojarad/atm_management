@@ -103,6 +103,18 @@
 		<Unit filename="/home/amirmjrd/Desktop/ATM/main.cpp">
 			<Option target="ATM"/>
 		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/models/transaction/Transaction.cpp">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/models/transaction/Transaction.h">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/models/transaction/time.cpp">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/models/transaction/time.h">
+			<Option target="ATM"/>
+		</Unit>
 		<Unit filename="/home/amirmjrd/Desktop/ATM/models/user/User.cpp">
 			<Option target="ATM"/>
 		</Unit>

@@ -7,14 +7,19 @@
 
 
 #include "../../models/user/User.h"
+#include "../../file_handler/FileHandler.h"
 
 class UserController {
-private:
-    User user;
 public:
+    User user;
+
     UserController(const User &user);
 
+    FileHandler fileHandler;
+
     UserController();
+
+    bool deposit(double amount);
 };
 
 

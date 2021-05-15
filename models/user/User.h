@@ -14,52 +14,30 @@ private:
 public:
     User(int id, const string &cardNumber, const string &password, double balance) : id(id),
                                                                                      cardNumber(cardNumber),
-                                                                                     password(password),
-                                                                                     balance(balance) {}
+                                                                                     password(password) {};
 
-    int getId() const {
-        return id;
-    }
+    int getId() const;
 
-    void setId(int id) {
-        User::id = id;
-    }
+    void setId(int id);
 
-    const string &getCardNumber() const {
-        return cardNumber;
-    }
+    const string &getCardNumber() const;
 
-    void setCardNumber(const string &cardNumber) {
-        User::cardNumber = cardNumber;
-    }
+    void setCardNumber(const string &cardNumber);
 
-    const string &getPassword() const {
-        return password;
-    }
+    const string &getPassword() const;
 
-    void setPassword(const string &password) {
-        User::password = password;
-    }
+    void setPassword(const string &password);
 
-    double getBalance() const {
-        return balance;
-    }
+    double getBalance() const;
 
-    void setBalance(double balance) {
-        User::balance = balance;
-    }
+    void setBalance(double balance);
 
-    User() {
-        this->balance = 0;
-        this->id = -1;
-        this->cardNumber = "null";
-        this->password = "null";
-    }
+    void addAmount(double amount);
 
-    string to_string() const {
-        return this->getId() + " " + this->getCardNumber() + " " + this->getPassword() + " " +
-               ::to_string(this->getBalance());
-    }
+
+    User();
+
+    string to_string() const;
 };
 
 #endif //ATM_USER_H

@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/amirmjrd/Desktop/ATM/main.cpp
-iostream
--
-string
--
-models/User.h
-/home/amirmjrd/Desktop/ATM/models/User.h
-
-/home/amirmjrd/Desktop/ATM/models/User.cpp
+/home/amirmjrd/Desktop/ATM/models/user/User.cpp
 User.h
-/home/amirmjrd/Desktop/ATM/models/User.h
+/home/amirmjrd/Desktop/ATM/models/user/User.h
 
-/home/amirmjrd/Desktop/ATM/models/User.h
+/home/amirmjrd/Desktop/ATM/models/user/User.h
 string
 -
 
