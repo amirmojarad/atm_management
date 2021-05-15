@@ -1,0 +1,3 @@
+/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/ATM.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/ATM.dir/main.cpp.o CMakeFiles/ATM.dir/models/user/User.cpp.o CMakeFiles/ATM.dir/controllers/ATMController.cpp.o -o ATM 
