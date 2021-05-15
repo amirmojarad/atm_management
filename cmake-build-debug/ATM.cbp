@@ -82,10 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/ATMController.cpp">
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/atm_controller/ATMController.cpp">
 			<Option target="ATM"/>
 		</Unit>
-		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/ATMController.h">
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/atm_controller/ATMController.h">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/user_controller/UserController.cpp">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/user_controller/UserController.h">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/file_handler/FileHandler.cpp">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/file_handler/FileHandler.h">
 			<Option target="ATM"/>
 		</Unit>
 		<Unit filename="/home/amirmjrd/Desktop/ATM/main.cpp">

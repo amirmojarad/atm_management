@@ -3,4 +3,4 @@ project(ATM)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ATM main.cpp models/user/User.cpp models/user/User.h controllers/ATMController.cpp controllers/ATMController.h)
+add_executable(ATM main.cpp models/user/User.cpp models/user/User.h controllers/atm_controller/ATMController.cpp controllers/atm_controller/ATMController.h controllers/user_controller/UserController.cpp controllers/user_controller/UserController.h file_handler/FileHandler.cpp file_handler/FileHandler.h)

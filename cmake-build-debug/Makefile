@@ -142,32 +142,86 @@ ATM/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/build
 .PHONY : ATM/fast
 
-controllers/ATMController.o: controllers/ATMController.cpp.o
+controllers/atm_controller/ATMController.o: controllers/atm_controller/ATMController.cpp.o
 
-.PHONY : controllers/ATMController.o
+.PHONY : controllers/atm_controller/ATMController.o
 
 # target to build an object file
-controllers/ATMController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/ATMController.cpp.o
-.PHONY : controllers/ATMController.cpp.o
+controllers/atm_controller/ATMController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o
+.PHONY : controllers/atm_controller/ATMController.cpp.o
 
-controllers/ATMController.i: controllers/ATMController.cpp.i
+controllers/atm_controller/ATMController.i: controllers/atm_controller/ATMController.cpp.i
 
-.PHONY : controllers/ATMController.i
+.PHONY : controllers/atm_controller/ATMController.i
 
 # target to preprocess a source file
-controllers/ATMController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/ATMController.cpp.i
-.PHONY : controllers/ATMController.cpp.i
+controllers/atm_controller/ATMController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.i
+.PHONY : controllers/atm_controller/ATMController.cpp.i
 
-controllers/ATMController.s: controllers/ATMController.cpp.s
+controllers/atm_controller/ATMController.s: controllers/atm_controller/ATMController.cpp.s
 
-.PHONY : controllers/ATMController.s
+.PHONY : controllers/atm_controller/ATMController.s
 
 # target to generate assembly for a file
-controllers/ATMController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/ATMController.cpp.s
-.PHONY : controllers/ATMController.cpp.s
+controllers/atm_controller/ATMController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.s
+.PHONY : controllers/atm_controller/ATMController.cpp.s
+
+controllers/user_controller/UserController.o: controllers/user_controller/UserController.cpp.o
+
+.PHONY : controllers/user_controller/UserController.o
+
+# target to build an object file
+controllers/user_controller/UserController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o
+.PHONY : controllers/user_controller/UserController.cpp.o
+
+controllers/user_controller/UserController.i: controllers/user_controller/UserController.cpp.i
+
+.PHONY : controllers/user_controller/UserController.i
+
+# target to preprocess a source file
+controllers/user_controller/UserController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.i
+.PHONY : controllers/user_controller/UserController.cpp.i
+
+controllers/user_controller/UserController.s: controllers/user_controller/UserController.cpp.s
+
+.PHONY : controllers/user_controller/UserController.s
+
+# target to generate assembly for a file
+controllers/user_controller/UserController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.s
+.PHONY : controllers/user_controller/UserController.cpp.s
+
+file_handler/FileHandler.o: file_handler/FileHandler.cpp.o
+
+.PHONY : file_handler/FileHandler.o
+
+# target to build an object file
+file_handler/FileHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o
+.PHONY : file_handler/FileHandler.cpp.o
+
+file_handler/FileHandler.i: file_handler/FileHandler.cpp.i
+
+.PHONY : file_handler/FileHandler.i
+
+# target to preprocess a source file
+file_handler/FileHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.i
+.PHONY : file_handler/FileHandler.cpp.i
+
+file_handler/FileHandler.s: file_handler/FileHandler.cpp.s
+
+.PHONY : file_handler/FileHandler.s
+
+# target to generate assembly for a file
+file_handler/FileHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.s
+.PHONY : file_handler/FileHandler.cpp.s
 
 main.o: main.cpp.o
 
@@ -232,9 +286,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ATM"
-	@echo "... controllers/ATMController.o"
-	@echo "... controllers/ATMController.i"
-	@echo "... controllers/ATMController.s"
+	@echo "... controllers/atm_controller/ATMController.o"
+	@echo "... controllers/atm_controller/ATMController.i"
+	@echo "... controllers/atm_controller/ATMController.s"
+	@echo "... controllers/user_controller/UserController.o"
+	@echo "... controllers/user_controller/UserController.i"
+	@echo "... controllers/user_controller/UserController.s"
+	@echo "... file_handler/FileHandler.o"
+	@echo "... file_handler/FileHandler.i"
+	@echo "... file_handler/FileHandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
