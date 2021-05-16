@@ -1,7 +1,3 @@
-//
-// Created by amirmjrd on 5/15/21.
-//
-
 #ifndef ATM_USERCONTROLLER_H
 #define ATM_USERCONTROLLER_H
 
@@ -13,8 +9,6 @@ class UserController {
 public:
     User user;
 
-    UserController(const User &user);
-
     void setUser(const User &user);
 
     FileHandler fileHandler;
@@ -22,6 +16,10 @@ public:
     UserController();
 
     bool deposit(double amount);
+
+    bool withdraw(double amount);
+
+    bool moneyTransfer(string &cardNumber, double amount);
 };
 
 

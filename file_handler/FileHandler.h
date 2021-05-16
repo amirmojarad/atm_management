@@ -33,6 +33,7 @@ public:
     User search(const string &card_number, const string &password);
 
     User search(int id);
+    User search(string &cardNumber);
 
 };
 

@@ -169,6 +169,60 @@ controllers/atm_controller/ATMController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.s
 .PHONY : controllers/atm_controller/ATMController.cpp.s
 
+controllers/last_ids_controller/LastID.o: controllers/last_ids_controller/LastID.cpp.o
+
+.PHONY : controllers/last_ids_controller/LastID.o
+
+# target to build an object file
+controllers/last_ids_controller/LastID.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o
+.PHONY : controllers/last_ids_controller/LastID.cpp.o
+
+controllers/last_ids_controller/LastID.i: controllers/last_ids_controller/LastID.cpp.i
+
+.PHONY : controllers/last_ids_controller/LastID.i
+
+# target to preprocess a source file
+controllers/last_ids_controller/LastID.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.i
+.PHONY : controllers/last_ids_controller/LastID.cpp.i
+
+controllers/last_ids_controller/LastID.s: controllers/last_ids_controller/LastID.cpp.s
+
+.PHONY : controllers/last_ids_controller/LastID.s
+
+# target to generate assembly for a file
+controllers/last_ids_controller/LastID.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.s
+.PHONY : controllers/last_ids_controller/LastID.cpp.s
+
+controllers/transaction_controller/TransactionController.o: controllers/transaction_controller/TransactionController.cpp.o
+
+.PHONY : controllers/transaction_controller/TransactionController.o
+
+# target to build an object file
+controllers/transaction_controller/TransactionController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o
+.PHONY : controllers/transaction_controller/TransactionController.cpp.o
+
+controllers/transaction_controller/TransactionController.i: controllers/transaction_controller/TransactionController.cpp.i
+
+.PHONY : controllers/transaction_controller/TransactionController.i
+
+# target to preprocess a source file
+controllers/transaction_controller/TransactionController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.i
+.PHONY : controllers/transaction_controller/TransactionController.cpp.i
+
+controllers/transaction_controller/TransactionController.s: controllers/transaction_controller/TransactionController.cpp.s
+
+.PHONY : controllers/transaction_controller/TransactionController.s
+
+# target to generate assembly for a file
+controllers/transaction_controller/TransactionController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.s
+.PHONY : controllers/transaction_controller/TransactionController.cpp.s
+
 controllers/user_controller/UserController.o: controllers/user_controller/UserController.cpp.o
 
 .PHONY : controllers/user_controller/UserController.o
@@ -343,6 +397,12 @@ help:
 	@echo "... controllers/atm_controller/ATMController.o"
 	@echo "... controllers/atm_controller/ATMController.i"
 	@echo "... controllers/atm_controller/ATMController.s"
+	@echo "... controllers/last_ids_controller/LastID.o"
+	@echo "... controllers/last_ids_controller/LastID.i"
+	@echo "... controllers/last_ids_controller/LastID.s"
+	@echo "... controllers/transaction_controller/TransactionController.o"
+	@echo "... controllers/transaction_controller/TransactionController.i"
+	@echo "... controllers/transaction_controller/TransactionController.s"
 	@echo "... controllers/user_controller/UserController.o"
 	@echo "... controllers/user_controller/UserController.i"
 	@echo "... controllers/user_controller/UserController.s"

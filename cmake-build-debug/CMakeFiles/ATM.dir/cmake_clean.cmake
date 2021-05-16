@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "ATM"
   "ATM.pdb"
   "CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o"
+  "CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o"
+  "CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o"
   "CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o"
   "CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o"
   "CMakeFiles/ATM.dir/main.cpp.o"

@@ -49,6 +49,14 @@ string User::to_string() const {
            ::to_string(this->getBalance());
 }
 
-void User::addAmount(double amount) {
+void User::increaseAmount(double amount) {
     this->balance += amount;
+}
+
+bool User::decreaseAmount(double amount) {
+    if (this->balance - amount >= 10000) {
+        this->balance -= amount;
+        return true;
+    }
+    return false;
 }

@@ -167,6 +167,32 @@ CMakeFiles/ATM.dir/models/transaction/time.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ATM.dir/models/transaction/time.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amirmjrd/Desktop/ATM/models/transaction/time.cpp -o CMakeFiles/ATM.dir/models/transaction/time.cpp.s
 
+CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o: CMakeFiles/ATM.dir/flags.make
+CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o: ../controllers/transaction_controller/TransactionController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o -c /home/amirmjrd/Desktop/ATM/controllers/transaction_controller/TransactionController.cpp
+
+CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amirmjrd/Desktop/ATM/controllers/transaction_controller/TransactionController.cpp > CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.i
+
+CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amirmjrd/Desktop/ATM/controllers/transaction_controller/TransactionController.cpp -o CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.s
+
+CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o: CMakeFiles/ATM.dir/flags.make
+CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o: ../controllers/last_ids_controller/LastID.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o -c /home/amirmjrd/Desktop/ATM/controllers/last_ids_controller/LastID.cpp
+
+CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amirmjrd/Desktop/ATM/controllers/last_ids_controller/LastID.cpp > CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.i
+
+CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amirmjrd/Desktop/ATM/controllers/last_ids_controller/LastID.cpp -o CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.s
+
 # Object files for target ATM
 ATM_OBJECTS = \
 "CMakeFiles/ATM.dir/main.cpp.o" \
@@ -175,7 +201,9 @@ ATM_OBJECTS = \
 "CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o" \
 "CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o" \
 "CMakeFiles/ATM.dir/models/transaction/Transaction.cpp.o" \
-"CMakeFiles/ATM.dir/models/transaction/time.cpp.o"
+"CMakeFiles/ATM.dir/models/transaction/time.cpp.o" \
+"CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o" \
+"CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o"
 
 # External object files for target ATM
 ATM_EXTERNAL_OBJECTS =
@@ -187,9 +215,11 @@ ATM: CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o
 ATM: CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o
 ATM: CMakeFiles/ATM.dir/models/transaction/Transaction.cpp.o
 ATM: CMakeFiles/ATM.dir/models/transaction/time.cpp.o
+ATM: CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o
+ATM: CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o
 ATM: CMakeFiles/ATM.dir/build.make
 ATM: CMakeFiles/ATM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ATM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ATM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ATM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

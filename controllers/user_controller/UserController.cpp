@@ -4,20 +4,38 @@
 
 using namespace std;
 
-UserController::UserController(const User &user) : user(user) {}
 
 UserController::UserController() : user() {}
 
 bool UserController::deposit(double amount) {
     if (amount >= 5000) {
-        cout << this->user.to_string() << endl;
-        this->user.addAmount(amount);
-        cout << to_string(this->user.getBalance()) << endl;
+        this->user.increaseAmount(amount);
         fileHandler.changeUser(this->user);
         return true;
     } else return false;
 }
 
+bool UserController::withdraw(double amount) {
+    if (amount >= 5000)
+        if (this->user.decreaseAmount(amount)) {
+            fileHandler.changeUser(this->user);
+            return true;
+        }
+    return false;
+}
+
+bool UserController::moneyTransfer(string &cardNumber, double amount) {
+    User destUser = fileHandler.search(cardNumber);
+    if (this->user.decreaseAmount(amount)) {
+        fileHandler.changeUser(this->user);
+        destUser.increaseAmount(amount);
+        fileHandler.changeUser(destUser);
+        return true;
+    }
+    return false;
+}
+
 void UserController::setUser(const User &user) {
     UserController::user = user;
 }
+

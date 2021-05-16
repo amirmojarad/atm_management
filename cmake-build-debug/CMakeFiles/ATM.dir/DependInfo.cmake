@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/amirmjrd/Desktop/ATM/controllers/atm_controller/ATMController.cpp" "/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o"
+  "/home/amirmjrd/Desktop/ATM/controllers/last_ids_controller/LastID.cpp" "/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o"
+  "/home/amirmjrd/Desktop/ATM/controllers/transaction_controller/TransactionController.cpp" "/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o"
   "/home/amirmjrd/Desktop/ATM/controllers/user_controller/UserController.cpp" "/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o"
   "/home/amirmjrd/Desktop/ATM/file_handler/FileHandler.cpp" "/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o"
   "/home/amirmjrd/Desktop/ATM/main.cpp" "/home/amirmjrd/Desktop/ATM/cmake-build-debug/CMakeFiles/ATM.dir/main.cpp.o"

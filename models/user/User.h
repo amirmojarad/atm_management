@@ -33,12 +33,14 @@ public:
 
     void setBalance(double balance);
 
-    void addAmount(double amount);
+    void increaseAmount(double amount);
 
 
     User();
 
     string to_string() const;
+
+    bool decreaseAmount(double amount);
 };
 
 #endif //ATM_USER_H

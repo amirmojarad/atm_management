@@ -88,6 +88,18 @@
 		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/atm_controller/ATMController.h">
 			<Option target="ATM"/>
 		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/last_ids_controller/LastID.cpp">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/last_ids_controller/LastID.h">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/transaction_controller/TransactionController.cpp">
+			<Option target="ATM"/>
+		</Unit>
+		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/transaction_controller/TransactionController.h">
+			<Option target="ATM"/>
+		</Unit>
 		<Unit filename="/home/amirmjrd/Desktop/ATM/controllers/user_controller/UserController.cpp">
 			<Option target="ATM"/>
 		</Unit>

@@ -54,10 +54,13 @@ void ATMController::loggedIn() {
                 deposit();
                 break;
             case 2:
+                withdraw();
                 break;
             case 3:
+                moneyTransfer();
                 break;
             case 4:
+                seeInventory();
                 break;
             case 5:
                 break;
@@ -81,6 +84,34 @@ void ATMController::deposit() {
     userController.deposit(amount);
 }
 
+void ATMController::withdraw() {
+    double amount = 0.0;
+    cout << "***************************** Withdraw *****************************\n";
+    cout << "Enter Amount: ";
+    cin >> amount;
+    if (amount < 5000) cout << "Please Enter More than 5000\n";
+    else if (!userController.withdraw(amount)) cout << "Inventory is not enough";
+}
+
+void ATMController::seeInventory() {
+    cout << "***************************** See Inventory *****************************\n";
+    cout << "Main Inventory " << userController.user.getBalance() << endl;
+    cout << "Amount to be withdrawn " << userController.user.getBalance() - 10000 << endl;
+}
+
+void ATMController::moneyTransfer() {
+    string destCardNumber;
+    double amount;
+    cout << "***************************** Money Transfer *****************************\n";
+    cout << "Enter Destination Card Number: \n";
+    cin >> destCardNumber;
+    cout << "Enter Amount: \n";
+    cin >> amount;
+    if (destCardNumber.length() < 10) cout << "Enter a valid Card Number!" << endl;
+    else if (amount < 5000) cout << "Please Enter More than 5000\n";
+    else userController.moneyTransfer(destCardNumber, amount);
+}
+
 void ATMController::printLoggedInMenu() {
     cout << "*********** Hello Dear User ***********" << endl;
     cout << "1. Deposit to Account\n";
@@ -92,3 +123,8 @@ void ATMController::printLoggedInMenu() {
     cout << "7. Exit\n";
     cout << "Enter your Request: \n";
 }
+
+
+
+
+

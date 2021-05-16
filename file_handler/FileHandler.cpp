@@ -40,6 +40,23 @@ User FileHandler::search(int id) {
     return User();
 }
 
+User FileHandler::search(string &cardNumber) {
+    switchToRead();
+    if (file.is_open()) {
+        string line;
+        while (getline(file, line)) {
+            stringstream ss(line);
+            string words[4];
+            int i = 0;
+            while (ss >> words[i++]);
+            if (cardNumber == words[1])
+                return User(stoi(words[0]), words[1], words[2], stod(words[3]));
+        }
+    }
+    close();
+    return User();
+}
+
 
 void FileHandler::close() {
     file.close();
@@ -105,3 +122,4 @@ void FileHandler::clearFile(string title, fstream &file) {
     file.open(title, ios::out);
     file << "";
 }
+

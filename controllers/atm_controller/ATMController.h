@@ -25,6 +25,12 @@ private:
 
 public:
     void run();
+
+    void withdraw();
+
+    void seeInventory();
+
+    void moneyTransfer();
 };
 
 
