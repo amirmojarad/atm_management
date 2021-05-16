@@ -69,19 +69,30 @@ void FileHandler::addUser(User user) {
 void FileHandler::removeUser(int id) {
     switchToRead();
     fstream tempFile;
-    tempFile.open("temp.txt", ios::out);
+    tempFile.open("temp.txt", ios::app);
     if (file.is_open() && tempFile.is_open()) {
         string line;
         while (getline(file, line))
-            cout << line.find(to_string(id)) << endl;
-        if (line.find(to_string(id)) == 0) {
+            if (line.find(to_string(id)) == 0)
+                continue;
+            else
+                tempFile << line << endl;
+    }
+    close();
+    switchToWrite(1);
+    tempFile.close();
+    tempFile.open("temp.txt", ios::in);
+    if (tempFile.is_open()) {
+        string line;
+        while (getline(tempFile, line)) {
             cout << line << endl;
-        } else {
-            cout << line << endl;
-            tempFile << line;
+            file << line << endl;
         }
     }
     tempFile.close();
+    clearFile("temp.txt", tempFile);
+    tempFile.close();
+    close();
 }
 
 void FileHandler::changeUser(User &changedUser) {
@@ -90,6 +101,7 @@ void FileHandler::changeUser(User &changedUser) {
     addUser(changedUser);
 }
 
-void FileHandler::clearFile() {
-    file.open(FILE_NAME, std::ofstream::out | std::ofstream::trunc);
+void FileHandler::clearFile(string title, fstream &file) {
+    file.open(title, ios::out);
+    file << "";
 }

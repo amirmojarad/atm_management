@@ -6,8 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/home/amirmjrd/Desktop/ATM/models/user/User.cpp
-User.h
+/home/amirmjrd/Desktop/ATM/file_handler/FileHandler.cpp
+FileHandler.h
+/home/amirmjrd/Desktop/ATM/file_handler/FileHandler.h
+iostream
+-
+string
+-
+sstream
+-
+
+/home/amirmjrd/Desktop/ATM/file_handler/FileHandler.h
+fstream
+-
+../models/user/User.h
 /home/amirmjrd/Desktop/ATM/models/user/User.h
 
 /home/amirmjrd/Desktop/ATM/models/user/User.h

@@ -15,6 +15,8 @@ public:
 
     UserController(const User &user);
 
+    void setUser(const User &user);
+
     FileHandler fileHandler;
 
     UserController();

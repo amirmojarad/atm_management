@@ -32,7 +32,7 @@ bool ATMController::login() {
     cin >> card_number;
     cout << "Enter password: ";
     cin >> password;
-    userController.user = fileHandler.search(card_number, password);
+    userController.setUser(fileHandler.search(card_number, password));
     if (userController.user.getId() != -1) {
         loggedIn();
         return true;
@@ -44,7 +44,6 @@ bool ATMController::login() {
 
 
 void ATMController::loggedIn() {
-    system("CLS");
     bool flag = false;
     int command = 0;
     while (!flag) {

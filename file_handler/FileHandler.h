@@ -14,7 +14,7 @@ private:
 
     void switchToRead();
 
-    void clearFile();
+    void clearFile(string , fstream &);
 
     void switchToWrite(int mood);
 

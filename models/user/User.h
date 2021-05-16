@@ -14,7 +14,8 @@ private:
 public:
     User(int id, const string &cardNumber, const string &password, double balance) : id(id),
                                                                                      cardNumber(cardNumber),
-                                                                                     password(password) {};
+                                                                                     password(password),
+                                                                                     balance(balance) {};
 
     int getId() const;
 
