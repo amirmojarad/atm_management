@@ -63,8 +63,10 @@ void ATMController::loggedIn() {
                 seeInventory();
                 break;
             case 5:
+                showTransactionList();
                 break;
             case 6:
+
                 break;
             case 7:
                 //TODO Exit
@@ -82,6 +84,8 @@ void ATMController::deposit() {
     cout << "Enter Amount: ";
     cin >> amount;
     userController.deposit(amount);
+    string destination = "0";
+    transactionController.makeDeposit(this->userController.user.getId(), amount, destination);
 }
 
 void ATMController::withdraw() {
@@ -90,7 +94,10 @@ void ATMController::withdraw() {
     cout << "Enter Amount: ";
     cin >> amount;
     if (amount < 5000) cout << "Please Enter More than 5000\n";
-    else if (!userController.withdraw(amount)) cout << "Inventory is not enough";
+    bool result = userController.withdraw(amount);
+    string destination = "0";
+    if (!result) cout << "Inventory is not enough";
+    else transactionController.makeWithdraw(this->userController.user.getId(), amount, destination);
 }
 
 void ATMController::seeInventory() {
@@ -109,8 +116,19 @@ void ATMController::moneyTransfer() {
     cin >> amount;
     if (destCardNumber.length() < 10) cout << "Enter a valid Card Number!" << endl;
     else if (amount < 5000) cout << "Please Enter More than 5000\n";
-    else userController.moneyTransfer(destCardNumber, amount);
+    else {
+        userController.moneyTransfer(destCardNumber, amount);
+        transactionController.makeTransfer(this->userController.user.getId(), amount, destCardNumber);
+    }
 }
+
+void ATMController::showTransactionList() {
+    cout << "***************************** Show User Transactions *****************************\n";
+    vector<Transaction> transactions = transactionController.getTransactions(userController.user.getId());
+    for (int i = 0; i < transactions.size(); i++)
+        cout << transactions[i].printTransaction() << endl;
+}
+
 
 void ATMController::printLoggedInMenu() {
     cout << "*********** Hello Dear User ***********" << endl;

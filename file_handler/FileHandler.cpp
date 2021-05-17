@@ -102,7 +102,6 @@ void FileHandler::removeUser(int id) {
     if (tempFile.is_open()) {
         string line;
         while (getline(tempFile, line)) {
-            cout << line << endl;
             file << line << endl;
         }
     }

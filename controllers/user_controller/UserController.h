@@ -20,6 +20,7 @@ public:
     bool withdraw(double amount);
 
     bool moneyTransfer(string &cardNumber, double amount);
+
 };
 
 

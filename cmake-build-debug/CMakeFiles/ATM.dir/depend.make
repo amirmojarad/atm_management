@@ -3,9 +3,18 @@
 
 CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o: ../controllers/atm_controller/ATMController.cpp
 CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o: ../controllers/atm_controller/ATMController.h
+CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o: ../controllers/transaction_controller/TransactionController.h
 CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o: ../controllers/user_controller/UserController.h
 CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o: ../file_handler/FileHandler.h
+CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o: ../models/transaction/Transaction.h
 CMakeFiles/ATM.dir/controllers/atm_controller/ATMController.cpp.o: ../models/user/User.h
+
+CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o: ../controllers/last_ids_controller/LastID.cpp
+CMakeFiles/ATM.dir/controllers/last_ids_controller/LastID.cpp.o: ../controllers/last_ids_controller/LastID.h
+
+CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o: ../controllers/transaction_controller/TransactionController.cpp
+CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o: ../controllers/transaction_controller/TransactionController.h
+CMakeFiles/ATM.dir/controllers/transaction_controller/TransactionController.cpp.o: ../models/transaction/Transaction.h
 
 CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o: ../controllers/user_controller/UserController.cpp
 CMakeFiles/ATM.dir/controllers/user_controller/UserController.cpp.o: ../controllers/user_controller/UserController.h
@@ -17,9 +26,11 @@ CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o: ../file_handler/FileHandler.h
 CMakeFiles/ATM.dir/file_handler/FileHandler.cpp.o: ../models/user/User.h
 
 CMakeFiles/ATM.dir/main.cpp.o: ../controllers/atm_controller/ATMController.h
+CMakeFiles/ATM.dir/main.cpp.o: ../controllers/transaction_controller/TransactionController.h
 CMakeFiles/ATM.dir/main.cpp.o: ../controllers/user_controller/UserController.h
 CMakeFiles/ATM.dir/main.cpp.o: ../file_handler/FileHandler.h
 CMakeFiles/ATM.dir/main.cpp.o: ../main.cpp
+CMakeFiles/ATM.dir/main.cpp.o: ../models/transaction/Transaction.h
 CMakeFiles/ATM.dir/main.cpp.o: ../models/user/User.h
 
 CMakeFiles/ATM.dir/models/transaction/Transaction.cpp.o: ../models/transaction/Transaction.cpp

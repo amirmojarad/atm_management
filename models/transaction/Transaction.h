@@ -21,21 +21,23 @@ private:
     int id, userID;
     Type type;
     double amount;
-    tm date;
+    string date;
     string destination;
 
     string typeToString();
 
+    Type stringToType(string &);
+
     string dateToString();
 
 public:
-    Transaction(int id, int userId, Type type, double amount, tm    date, const string &destination);
+    Transaction(int id, int userId, Type type, double amount, const string &destination);
 
-    Transaction();
-
+    Transaction(int id, int userId, string &type, double amount, const string &destination, string &date);
 
     string to_string();
 
+    string printTransaction();
 
 };
 

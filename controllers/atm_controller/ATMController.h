@@ -5,6 +5,7 @@
 #include "../../models/user/User.h"
 #include "../../file_handler/FileHandler.h"
 #include "../../controllers/user_controller/UserController.h"
+#include "../../controllers/transaction_controller/TransactionController.h"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ class ATMController {
 private:
     FileHandler fileHandler;
     UserController userController;
+    TransactionController transactionController;
 
     bool login();
 
@@ -23,6 +25,7 @@ private:
 
     void printMenu();
 
+
 public:
     void run();
 
@@ -31,6 +34,8 @@ public:
     void seeInventory();
 
     void moneyTransfer();
+
+    void showTransactionList();
 };
 
 

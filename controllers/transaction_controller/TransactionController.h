@@ -6,17 +6,27 @@
 #define ATM_TRANSACTIONCONTROLLER_H
 
 
+#include <vector>
 #include "../../models/transaction/Transaction.h"
 
 class TransactionController {
 private:
-    static const int id = 0;
+    int id;
+    void addTransaction(Transaction &transaction);
+    int fetchLastID();
+
 public:
+
+    TransactionController();
+
     void makeTransfer(int userID, double amount, string &destination);
 
     void makeDeposit(int userID, double amount, string &destination);
 
     void makeWithdraw(int userID, double amount, string &destination);
+
+    vector<Transaction> getTransactions(int id);
+
 };
 
 
